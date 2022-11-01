@@ -1,19 +1,19 @@
+"use strict";
 function square(num) {
     return num * num;
 }
 console.log(square(3));
 console.log(square("3"));
 function greet(person) {
-    return "Hi there, ".concat(person);
+    return `Hi there, ${person}`;
 }
-var doSomething = function (person, age, isFunny) {
+const doSomething = (person, age, isFunny) => {
 };
 doSomething("Monkey D. Luffy", 34, true);
 doSomething("Monkey D. Luffy", 34, "true");
 greet(true);
-function greetwithdefault(person) {
-    if (person === void 0) { person = "stranger"; }
-    return "Hi there ".concat(person);
+function greetwithdefault(person = "stranger") {
+    return `Hi there ${person}`;
 }
 // Return type
 greetwithdefault();
@@ -24,11 +24,11 @@ function mystery(num) {
     }
     return num;
 }
-var add = function (x, y) {
+const add = (x, y) => {
     return x + y;
 };
-var colors = ["red", "yellow", "orange"];
-colors.map(function (color) {
+const colors = ["red", "yellow", "orange"];
+colors.map(color => {
     color.toUpperCase();
 });
 // The void type
@@ -38,7 +38,7 @@ function printTwice(msg) {
     // return "";
 }
 // Never
-var makeError = function (msg) {
+const makeError = (msg) => {
     throw new Error(msg);
 };
 function gameLoop() {
