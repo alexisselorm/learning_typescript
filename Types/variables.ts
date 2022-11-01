@@ -27,8 +27,7 @@ anyVar = false
 anyVar = 1
 anyVar = "1"
 anyVar = [1,2,3]
-anyVar = [1,2,3]
-anyVar = [1,2,3]
+
 
 const movies = ["Arrival", "The mask","Amadeus","Odyssey"]
 let foundMovie: string;
