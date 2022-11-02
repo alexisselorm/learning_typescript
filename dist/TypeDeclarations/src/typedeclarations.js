@@ -5,6 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 // Type declarations
 const axios_1 = __importDefault(require("axios"));
+// _.sample([12,23,4,56,7,8,97])
 axios_1.default
     .get("https://jsonplaceholder.typicode.com/users/1")
     .then((res) => {

@@ -1,6 +1,8 @@
 // Type declarations
 import axios from "axios";
+import _ from "lodash";
 
+// _.sample([12,23,4,56,7,8,97])
 axios
   .get<Person>("https://jsonplaceholder.typicode.com/users/1")
   .then((res) => {
