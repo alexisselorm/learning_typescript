@@ -1,12 +1,7 @@
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
 // Type declarations
-const axios_1 = __importDefault(require("axios"));
+import axios from "axios";
 // _.sample([12,23,4,56,7,8,97])
-axios_1.default
+axios
     .get("https://jsonplaceholder.typicode.com/users/1")
     .then((res) => {
     console.log("woo");
@@ -16,7 +11,7 @@ axios_1.default
     .catch((e) => {
     console.log(e);
 });
-axios_1.default
+axios
     .get("https://jsonplaceholder.typicode.com/users")
     .then((res) => {
     console.log("woo");
