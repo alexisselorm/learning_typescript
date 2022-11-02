@@ -85,17 +85,23 @@ function watch(movie) {
 }
 const getFarmAnimalSound = (animal) => {
     switch (animal.kind) {
+        case "rooster":
+            animal;
+            return "Cockadoodledoo";
         case "pig":
             animal;
             return "Oink";
         case "cow":
             animal;
             return "Moo";
-        case "rooster":
+        case "sheep":
             animal;
-            return "Cockadoodledoo";
+            return "Baaah";
+        // Exhaustive checks with never
         default:
-            break;
+            // We should never make it here if all cases were handled correctly
+            const neverGetHere = animal;
+            return neverGetHere;
     }
 };
 const stevie = {
